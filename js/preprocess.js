@@ -2,7 +2,7 @@
 var countries = _(education_ratio_rows).map(function(row) {
     var country = {
         "name": row[0],
-        "code": row[1],
+        "code": a3_to_a2[row[1]],
         "education_ratio": {}
     };
     for (var i = 0; i < 42; i++) {
