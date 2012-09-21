@@ -2,3 +2,8 @@ body {
     font-family: sans-serif;
     color: #333;
 }
+
+#map_container {
+    width: 560px;
+    height: 400px;
+}
