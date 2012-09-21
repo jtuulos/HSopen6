@@ -1,12 +1,12 @@
-// Gender equality ranking
-var countries = _(gender_equality_rows).map(function(row) {
+// Education ratio
+var countries = _(education_ratio_rows).map(function(row) {
     var country = {
         "name": row[0],
         "code": row[1],
-        "gender_equality": {}
+        "education_ratio": {}
     };
-    for (var i = 0; i < 7; i++) {
-        country.gender_equality[i + 2005] = row[i + 2];
+    for (var i = 0; i < 42; i++) {
+        country.education_ratio[i + 1970] = row[i + 2];
     }
     return country;
 });
